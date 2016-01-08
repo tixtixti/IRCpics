@@ -2,6 +2,8 @@
 logs
 *.log
 
+server/q/*
+
 # Runtime data
 pids
 *.pid
