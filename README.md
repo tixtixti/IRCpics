@@ -1,9 +1,7 @@
 # IRCpics
 
 Fairly simple NodeJS server and Android app, for selecting picture on phone, hosting it
-and sending a link to IRC channel. Uses PSQL for database queries.
-
-Using server add app currently requires both devices to be in same network and change hardcoded IP address of server. Server side also requires working PSQL server.
+and sending a link to IRC channel. Uses PSQL for database queries. Using server add app currently requires both devices to be in same network and change hardcoded IP address of server. Server side also requires working PSQL server.
 ----------------------------------------
 Todo:
   - Refactoring
