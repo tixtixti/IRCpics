@@ -55,8 +55,8 @@ router.post('/post', upload.single('image') ,function (req, res){
 
 //tallenna kuvan tiedot tietokantaan.
 
-  db.none("INSERT INTO osoitteet (nimi,kuvateksti,kanava,paiva) values($1,$2,$3,$4)",
-  [data.nimi, data.kuvateksti, data.kanava, data.paiva])
+  db.none("INSERT INTO osoitteet (nimi,kuvateksti,kanava,paiva) values(${nimi},${kuvateksti},${kanava},${paiva})",
+  data)
   .then(function(){
     client.say('#ohrapuuro', "http://localhost:3000/r/" + osoite);
     res.send('ok')
